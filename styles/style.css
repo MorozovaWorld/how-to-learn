@@ -1,3 +1,8 @@
+* {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -36,6 +41,7 @@ top: 30px;
   font-size: 102px;
   font-weight: bold;
   width: 730px;
+  line-height: 96px;
 }
 .header__subtitle {
   width: 388px;
@@ -43,6 +49,7 @@ top: 30px;
   bottom: 30px;
   font-size: 18px;
   font-weight: normal;
+  line-height: 25px;
 }
 .header__link {
   text-decoration: none;
@@ -64,7 +71,43 @@ top: 30px;
   right: 0;
   z-index: 1;
 }
-
+.description {
+  padding-top: 100px;
+}
+.two-columns {
+  width: 80%;
+  min-height: 332px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: relative;
+  justify-content: space-between;
+}
+.two-columns__brief {
+  width: 175px;
+}
+.two-columns__brief_text {
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  font-weight: bold;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
