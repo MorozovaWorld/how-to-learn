@@ -161,9 +161,26 @@ top: 30px;
   margin-bottom: 20px;
 }
 
+.section-title_theme_dark {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
 .section-subtitle {
   width: 60%;
   text-align: center;
+
+}
+
+.section-subtitle_theme_dark {
+  width: 60%;
+  text-align: center;
+  color: white;
 }
 
 .table {
@@ -171,9 +188,23 @@ top: 30px;
   display: flex;
 }
 
+.table_theme_dark {
+  width: 1100px;
+  display: flex;
+}
+
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  margin-right: 0;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .table__heading {
@@ -183,12 +214,29 @@ top: 30px;
   margin: 0;
 }
 
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
 }
 
 .feinman {
@@ -231,10 +279,20 @@ top: 30px;
   margin-right: 48px;
   align-self: flex-end;
 }
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+
+.kaufman {
+  background-color: #000;
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
 }
